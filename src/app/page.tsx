@@ -2,102 +2,163 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <h2 className="col-span-full text-4xl font-[GaramondPremierProSubhead] italic border-b-1 border-neutral-50/50">
+        Selected Experience
+      </h2>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <WorkItem
+        company="Mina"
+        years="2020 - 2024"
+        images={[
+          {
+            path: "/work-images/mina-1.jpg",
+            alt: "Isometric illustration of the mina logo going to different energy providers",
+          },
+          {
+            path: "/work-images/mina-2.jpg",
+            alt: "An EV charger",
+          },
+          {
+            path: "/work-images/mina-3.jpg",
+            alt: "An allstar chargepass card being tapped on an EV charger",
+          },
+        ]}
+        description={[
+          `As employee #2 at EV payments startup Mina, I played a central role in taking the company
+          from inception to £35m exit in 2 years, and completing a successful
+          integration into a $billion matrix organisation.`,
+          `Focussing the team on building things that drove numbers we cared
+          about, I grew the product & engineering function to 4 cross-functional
+          squads, each with clear remit and autonomy.`,
+        ]}
+      />
+      <WorkItem
+        company="PitchIn®"
+        years="2023 - 2025"
+        images={[
+          {
+            path: "/work-images/pitchin-1.png",
+            alt: "Women playing netball with an overlay of someone paying for a game with the PitchIn app",
+          },
+          {
+            path: "/work-images/pitchin-2.png",
+            alt: "Ready to join the revolution? Download PitchIn today!",
+          },
+          {
+            path: "/work-images/pitchin-3.png",
+            alt: "Some men playing football with an overlay of the pitchin app showing how a payment has been split",
+          },
+        ]}
+        description={[
+          `I founded PitchIn® while still at Mina, and in 2024 took the plunge to go full time.`,
+          `I successfully built and launched the app, and it has been used to process thousands of payments, helping organise hundreds of sports games.`,
+        ]}
+      />
+      <WorkItem
+        company="EO"
+        years="2025"
+        images={[
+          {
+            path: "/work-images/eo-1.png",
+            alt: "EO fleet charging evo system - design and deployment, EO Hub, EO cloud software, smart fleet consultation, AC and DC charging hardware, 24/7/365 operations and maintenance service",
+          },
+          {
+            path: "/work-images/eo-2.png",
+            alt: "EO",
+          },
+          {
+            path: "/work-images/eo-3.gif",
+            alt: "Animated gif showing the EO cloud software in action",
+          },
+        ]}
+        description={[
+          `Based on my work at Mina, EO asked me to come and help set up their new Product function.`,
+          `By focussing on culture, ways of working and tailored individual development, I was able to accelerate their product maturity and completely transform how they prioritise and validate work.`,
+        ]}
+      />
+      <WorkItem
+        company="Taro Pumps"
+        years="2017-2020"
+        images={[
+          {
+            path: "/work-images/taro-1.jpg",
+            alt: "Taro Pumps factory team working in the factoy",
+          },
+          {
+            path: "/work-images/taro-2.jpg",
+            alt: "Taro submersible pump product",
+          },
+          {
+            path: "/work-images/taro-3.jpg",
+            alt: "Retail worker using the POS part of the system",
+          },
+        ]}
+        description={[
+          `Revolutionised a £100m+ business through greenfield software that touches everything from franchised retail POS, to factory inventory, servicing, and production management.`,
+          `-`,
+          `Growing up exclusively in the U.K, water pumps were never something even on my radar. In India they’re essential not only for homes but industry and agriculture.`,
+          `I was lucky enough to lead the visionary software-enabled reimagining of one of this incredible nation’s blue chip manufacturers, delivering huge measurable results across B2C & B2B.`,
+        ]}
+      />
+      <WorkItem
+        company="Razor"
+        years="2014-2017"
+        images={[
+          {
+            path: "/work-images/razor-1.jpg",
+            alt: "Virgin trains at a station",
+          },
+          {
+            path: "/work-images/razor-2.jpg",
+            alt: "Someone scanning a digital ticket at a concert",
+          },
+          {
+            path: "/work-images/razor-3.jpg",
+            alt: "A water company worker inspecting a construction site using a tablet",
+          },
+        ]}
+        description={[
+          `As Consulting Head of Build at Razor I drove outcome driven solutions for a huge range of clients across B2B & B2C sectors.`,
+          `Oftentimes working with clients as diverse as a water company in the morning, a ticketing platform over lunch and a care home provider in the afternoon, I still credit this experience with building my foundations of continuous discovery and ‘on-a-sixpence’ context switching.`,
+        ]}
+      />
+    </>
+  );
+}
+
+function WorkItem({
+  company,
+  years,
+  images,
+  description,
+}: {
+  company: string;
+  years: string;
+  images: { path: string; alt: string }[];
+  description: string[];
+}) {
+  return (
+    <article className="col-span-full grid grid-cols-subgrid border-b-1 pb-5 border-neutral-50/20">
+      {images.map((image, index) => (
+        <Image
+          src={image.path}
+          alt={image.alt}
+          key={index}
+          width={380}
+          height={250}
+          className="col-span-4"
+        />
+      ))}
+      <div className="col-span-4 mt-5">
+        <h3 className="text-4xl">{company}</h3>
+        <p className="text-lg">{years}</p>
+      </div>
+      <div className="col-span-4 mt-5 ">
+        {description.map((para, index) => (
+          <p key={index}>{para}</p>
+        ))}
+      </div>
+    </article>
   );
 }
