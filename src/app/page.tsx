@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <h2 className="col-span-full text-4xl font-[GaramondPremierProSubhead] italic border-b-1 border-neutral-50/50">
+      <h2 className="col-span-full text-brand text-4xl font-[GaramondPremierProDisplay] border-b-1 border-neutral-50/50">
         Selected Experience
       </h2>
 
@@ -147,14 +147,14 @@ function WorkItem({
           key={index}
           width={380}
           height={250}
-          className="col-span-4"
+          className="col-span-full sm:col-span-4 mb-5 sm:mb-0"
         />
       ))}
-      <div className="col-span-4 mt-5">
-        <h3 className="text-4xl">{company}</h3>
+      <div className="col-span-full sm:col-span-4 sm:mt-5">
+        <h3 className="text-3xl">{company}</h3>
         <p className="text-lg">{years}</p>
       </div>
-      <div className="col-span-4 mt-5 ">
+      <div className="col-span-full sm:col-span-4 mt-5 sm:text-base text-sm">
         {description.map((para, index) => (
           <p key={index}>{para}</p>
         ))}

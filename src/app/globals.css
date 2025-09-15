@@ -2,7 +2,7 @@
 
 :root {
   /* --background: #1a1e19; */
-  --background: #253238;
+  --background: #262626;
   --foreground: #ededed;
   /* --brand: #8baa53; */
   --brand: #e56d4c;
@@ -69,6 +69,21 @@
     font-weight: 500;
     font-style: italic;
   }
+}
+
+@font-face {
+  font-family: "GaramondPremierProDisplay";
+  font-display: swap;
+  src: url(../../public/fonts/GaramondPremrPro-Disp.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GaramondPremierProDisplay";
+  font-display: swap;
+  src: url(../../public/fonts/GaramondPremrPro-MedDisp.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @layer base {
