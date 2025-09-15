@@ -1,12 +1,10 @@
+import PageTitle from "@/components/PageTitle";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <h2 className="col-span-full text-brand text-4xl font-[GaramondPremierProDisplay] border-b-1 border-neutral-50/50">
-        Selected Experience
-      </h2>
-
+      <PageTitle title="Selected Experience" />
       <WorkItem
         company="Mina"
         years="2020 - 2024"

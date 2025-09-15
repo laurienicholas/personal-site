@@ -87,7 +87,11 @@
 }
 
 @layer base {
-  p + p {
+  p + p,
+  p + ul,
+  p + ol,
+  ol + p,
+  ul + p {
     @apply mt-5; /* add spacing between consecutive paragraphs */
   }
 }

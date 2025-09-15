@@ -35,10 +35,10 @@ export default function RootLayout({
               height={65}
             />
             <div className="col-span-10 md:col-span-8 grid grid-cols-subgrid">
-              <h1 className="font-[GaramondPremierProDisplay] text-4xl md:text-6xl sm:text-7xl col-span-full text-brand">
+              <h1 className="font-[GaramondPremierProDisplay] text-5xl md:text-7xl sm:text-6xl col-span-full text-brand">
                 Laurie Nicholas
               </h1>
-              <p className="sm:text-lg text-md col-span-full">
+              <p className="sm:text-lg text-sm col-span-full">
                 Proven product leader who gets businesses{" "}
                 <br className="hidden sm:block" />
                 building things that drive metrics that matter
