@@ -9,8 +9,8 @@ export default function Profile() {
       </div>
       <div className="col-span-9 col-start-3 md:col-span-6  md:col-start-5 ">
         <p>
-          Since picking up my first book (HTML 3.2) in 1999 I’ve been obsessed
-          with making digital products.
+          Since picking up my first tech book (HTML 3.2) in 1999 I’ve been
+          obsessed with making digital products.
         </p>
         <p>
           In the 26 years since I’ve had the privilege of working with, and
